@@ -1,4 +1,5 @@
-post http://localhost:3001/api/persons
+//post http://localhost:3001/api/persons
+post https://whispering-ocean-32384.herokuapp.com/api/persons
 content-type: application/json
 
 {
