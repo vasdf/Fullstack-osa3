@@ -1,8 +1,7 @@
-//post http://localhost:3001/api/persons
-post https://whispering-ocean-32384.herokuapp.com/api/persons
+post http://localhost:3001/api/persons
 content-type: application/json
 
 {
-  "name": "Testi",
-  "number": "123"
+  "name": "Asdf",
+  "number": "123asdas"
 }

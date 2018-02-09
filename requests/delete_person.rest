@@ -1,2 +1,2 @@
-//delete http://localhost:3001/api/persons/4
-delete https://whispering-ocean-32384.herokuapp.com/api/persons/513
+delete http://localhost:3001/api/persons/5a7d9806d0f96e239097ab89
+//delete https://whispering-ocean-32384.herokuapp.com/api/persons/513
