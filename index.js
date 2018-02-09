@@ -12,29 +12,6 @@ app.use(morgan(':method :url :data :status :res[content-length] - :response-time
 app.use(cors())
 app.use(express.static('build'))
 
-let persons = [
-  {
-    name: "Arto Hellas",
-    number: "040-123456",
-    id: 1
-  },
-  {
-    name: "Martti Tienari",
-    number: "040-123456",
-    id: 2
-  },
-  {
-    name: "Arto Järvinen",
-    number: "040-123456",
-    id: 3
-  },
-  {
-    name: "Lea Kutvonen",
-    number: "040-123456",
-    id: 4
-  },
-]
-
 app.get('/api/persons', (req, res) => {
   Person
     .find({})
@@ -98,7 +75,7 @@ app.post('/api/persons', (req, res) => {
     .find({ name: person.name })
     .then(result => {
       if (result.length > 0) {
-        res.status(400).send({ error: "name is on the list already" })
+        res.status(400).send({ error: 'name is on the list already' })
       } else {
         person
           .save()
@@ -124,7 +101,7 @@ app.put('/api/persons/:id', (req, res) => {
     })
     .catch(error => {
       console.log(error)
-      res.status(400).send({ error: "malformatted id" })
+      res.status(400).send({ error: 'malformatted id' })
     })
 })
 
